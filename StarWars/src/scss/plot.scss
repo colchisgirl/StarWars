@@ -1,3 +1,5 @@
+$content-width: 800px;
+
 .plot {
     background: #fff5f5;
     text-align: center;
@@ -10,13 +12,14 @@
 
     }
     .plotcontent {
-        width: 50%;
+        width: $content-width;
         margin: 0 auto;
         display: flex;
         justify-content: center;
         flex-direction: row;
         img {
-            width: 30%;
+            width: 35%;
+            box-shadow: 0px 0px 17px 0px rgba(69,15,1,1);
         }
         .plottext {
             text-align: justify;

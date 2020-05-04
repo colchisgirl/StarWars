@@ -10,8 +10,9 @@ body {
 
 }
 
+$content-width: 800px;
+
 @import 'navigationbar.scss';
-
 @import 'title.scss';
-
 @import 'plot.scss';
+@import 'characters.scss';
