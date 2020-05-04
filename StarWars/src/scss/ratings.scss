@@ -1,0 +1,61 @@
+$content-width: 800px;
+
+.ratings {
+    width: 100%;
+    height: 70vh;
+    background: #fff5f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    border-bottom: solid 1px gray;
+
+    h2 {
+        padding-top: 1em;
+        font-size: 35px;
+        color: black;
+        margin: 0 auto;
+    }
+    .charts {
+        width: $content-width;
+        margin: 0 auto;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.block {
+    width: 25%;
+    height: 400px;
+}
+
+.gray {
+    width: 100%;
+    background: #9a3015;
+    margin-bottom: 0.5em;
+
+    &.imdb {
+        height: calc(75% - 2em);
+    }
+
+    &.tmt {
+        height: calc(90% - 2em);
+    }
+
+    &.metacritic {
+        height: calc(85% - 2em);
+    }
+}
+
+.chart {
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
