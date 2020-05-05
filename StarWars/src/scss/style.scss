@@ -7,15 +7,24 @@ body {
     font-family: arial, sans-serif;
     display: flex;
     flex-direction: column;
-
 }
 
 $content-width: 800px;
+.break {
+    display: none;
+    flex-basis: 100%;
+}
 
-@import 'navigationbar.scss';
-@import 'title.scss';
-@import 'plot.scss';
-@import 'characters.scss';
-@import 'ratings.scss';
-@import 'cast.scss';
-@import 'gallery.scss';
+@media screen and (max-width: 705px) and (min-width: 416px) {
+    .break {
+        display: block;
+    }
+}
+
+@import "navigationbar.scss";
+@import "title.scss";
+@import "plot.scss";
+@import "characters.scss";
+@import "ratings.scss";
+@import "cast.scss";
+@import "gallery.scss";
