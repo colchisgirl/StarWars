@@ -3,7 +3,8 @@ $content-width: 800px;
 .plot {
     background: #fff5f5;
     text-align: center;
-    height: 60vh;
+    min-height: 60vh;
+    padding: 0 2em;
     h2 {
         margin-top: 1em;
         margin-bottom: 1em;
@@ -12,19 +13,18 @@ $content-width: 800px;
 
     }
     .plotcontent {
-        width: $content-width;
-        margin: 0 auto;
+        max-width: $content-width;
+        margin: 0 auto 2em auto;
         display: flex;
         justify-content: center;
-        flex-direction: row;
         img {
             width: 35%;
+            align-self: center;
             box-shadow: 0px 0px 17px 0px rgba(69,15,1,1);
         }
         .plottext {
             text-align: justify;
-            width: 50%;
-            margin: 0 auto;
+            margin-left: 2em;
             h3 {
                 font-size: 25px;
                 margin-bottom: 2em;
@@ -34,4 +34,23 @@ $content-width: 800px;
             }
         }
      }
+}
+
+@media screen and (max-width: 640px) {
+    .plotcontent {
+        flex-direction: column;
+
+        img {
+           margin-bottom: 2em; 
+        }
+
+        .plottext {
+            margin-left: 0 !important;
+              
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
 }
